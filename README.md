@@ -17,16 +17,21 @@ This Java program recursively traverses a specified directory and its subdirecto
 1. Clone or download this repository.
 2. Open the `DeleteEmptyFolders.java` file in your preferred Java IDE or text editor.
 3. Modify the `startDir` variable in the `main()` method to the path of the directory you want to clean up.
-   
-   ```java
-   Path startDir = Paths.get("path/to/your/directory"); // Set your directory path here
+
+    ```java
+    Path startDir = Paths.get("path/to/your/directory"); // Set your directory path here
+    ```
+
 4. Compile and run the program.
-Example
+
+### Example
+
+```bash
 javac DeleteEmptyFolders.java
 java DeleteEmptyFolders
-
+```
 The program will recursively check the directory and its subdirectories for empty folders and delete them. It will print the path of each deleted folder to the console.
 
-Notes
+## Notes
 The program only deletes empty directories. It does not remove directories that contain files or subdirectories.
 Make sure you have a backup of important data before running the program to avoid accidental deletion of directories.
