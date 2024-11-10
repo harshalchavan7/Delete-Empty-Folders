@@ -22,16 +22,41 @@ This Java program recursively traverses a specified directory and its subdirecto
     Path startDir = Paths.get("path/to/your/directory"); // Set your directory path here
     ```
 
-4. Compile and run the program.
+4. Compile and run the program using the following commands:
 
-### Example
+    ```bash
+    javac DeleteEmptyFolders.java
+    java DeleteEmptyFolders
+    ```
 
-```bash
-javac DeleteEmptyFolders.java
-java DeleteEmptyFolders
-```
-The program will recursively check the directory and its subdirectories for empty folders and delete them. It will print the path of each deleted folder to the console.
+   The program will recursively check the specified directory and its subdirectories for empty folders and delete them. It will print the path of each deleted folder to the console.
 
 ## Notes
-The program only deletes empty directories. It does not remove directories that contain files or subdirectories.
-Make sure you have a backup of important data before running the program to avoid accidental deletion of directories.
+
+- The program **only deletes empty directories**. It will not remove directories that contain files or subdirectories.
+- The program does **not** ask for confirmation before deleting a directory, so be cautious.
+- Always make sure to **back up important data** before running the program to avoid accidental deletion of directories.
+- You may want to run the program on a **test directory** first to ensure it works as expected.
+
+## Example
+
+Here’s an example of how to run the program:
+
+1. After modifying the `startDir` variable to your desired directory path, save the file.
+2. Run the following commands in your terminal:
+
+    ```bash
+    javac DeleteEmptyFolders.java
+    java DeleteEmptyFolders
+    ```
+
+   The program will output something like this if it deletes any empty directories:
+
+    ```
+    Deleted empty folder: path/to/empty/directory1
+    Deleted empty folder: path/to/empty/directory2
+    ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
